@@ -1,4 +1,4 @@
-package br.com.vr.models.configs;
+package br.com.vr.configs;
 
 import br.com.vr.models.Card;
 import br.com.vr.repositories.CardRepository;

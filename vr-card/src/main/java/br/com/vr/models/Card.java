@@ -21,5 +21,6 @@ public class Card {
     private String numberCard;
     private String HashPassword;
     private String userId;
+    private Double cardBalance;
     private Instant createdAt;
 }
