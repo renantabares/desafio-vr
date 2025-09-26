@@ -28,6 +28,15 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
             );
             return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
         }
+        @ExceptionHandler(CardTransactionException.class)
+        public ResponseEntity<ErrorResponse> handleCardNotFound(CardTransactionException ex) {
+            ErrorResponse error = new ErrorResponse(
+                    HttpStatus.UNPROCESSABLE_ENTITY.value(),
+                    ex.getMessage(),
+                    System.currentTimeMillis()
+            );
+            return new ResponseEntity<>(error, HttpStatus.UNPROCESSABLE_ENTITY);
+        }
         @Getter
         public static class ErrorResponse {
             private int status;

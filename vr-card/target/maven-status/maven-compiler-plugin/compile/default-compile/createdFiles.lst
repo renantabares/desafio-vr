@@ -1,1 +1,12 @@
+br\com\vr\dtos\CardDTO.class
+br\com\vr\exceptions\CardNotFoundException.class
+br\com\vr\configs\MongoInitializer.class
+br\com\vr\exceptions\CardAlreadyExistsException.class
+br\com\vr\exceptions\GlobalExceptionHandler.class
+br\com\vr\exceptions\GlobalExceptionHandler$ErrorResponse.class
 br\com\vr\VrCardApplication.class
+br\com\vr\repositories\CardRepository.class
+br\com\vr\models\Card.class
+br\com\vr\controller\CardController.class
+br\com\vr\models\Card$CardBuilder.class
+br\com\vr\services\CardService.class

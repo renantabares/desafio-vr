@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Service
@@ -22,7 +23,7 @@ public class CardService {
                             "Cartão já existe com este número: " + request.numeroCartao()
                     );
                 });
-        Card card = Card.builder().numberCard(request.numeroCartao()).HashPassword((new BCryptPasswordEncoder()).encode(request.senha())).userId(null).cardBalance(500.00).build();
+        Card card = Card.builder().numberCard(request.numeroCartao()).HashPassword((new BCryptPasswordEncoder()).encode(request.senha())).userId(null).cardBalance(BigDecimal.valueOf(500.00)).build();
         return  cardRepository.save(card);
     }
 
@@ -31,7 +32,7 @@ public class CardService {
     }
 
 
-    public Double getBalance(String cardNumber) {
+    public BigDecimal getBalance(String cardNumber) {
         return cardRepository.findByNumberCard(cardNumber)
                 .map(Card::getCardBalance)
                 .orElseThrow(() -> new CardNotFoundException(

@@ -15,19 +15,21 @@ public class MongoInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        repository.save(Card.builder()
-                .id(null)
-                .numberCard("123456789")
-                .HashPassword(new BCryptPasswordEncoder().encode("123456"))
-                .userId(null)
-                .build());
-        repository.save(Card.builder()
-                .id(null)
-                .numberCard("987654321")
-                .HashPassword(new BCryptPasswordEncoder().encode("654321"))
-                .userId(null)
-                .build());
-
-
+        if (repository.count() == 0) {
+            repository.save(Card.builder()
+                    .id(null)
+                    .numberCard("123456789")
+                    .HashPassword(new BCryptPasswordEncoder().encode("123456"))
+                    .userId(null)
+                    .build());
+            repository.save(Card.builder()
+                    .id(null)
+                    .numberCard("987654321")
+                    .HashPassword(new BCryptPasswordEncoder().encode("654321"))
+                    .userId(null)
+                    .build());
+        } else {
+            System.out.println("⚠️ Dados já existentes, não inicializado novamente.");
+        }
     }
 }

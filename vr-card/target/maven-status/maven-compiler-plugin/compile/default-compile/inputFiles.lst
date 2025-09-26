@@ -1,1 +1,10 @@
+C:\myworkspace\java\desafio-vr\vr-card\src\main\java\br\com\vr\configs\MongoInitializer.java
+C:\myworkspace\java\desafio-vr\vr-card\src\main\java\br\com\vr\controller\CardController.java
+C:\myworkspace\java\desafio-vr\vr-card\src\main\java\br\com\vr\dtos\CardDTO.java
+C:\myworkspace\java\desafio-vr\vr-card\src\main\java\br\com\vr\exceptions\CardAlreadyExistsException.java
+C:\myworkspace\java\desafio-vr\vr-card\src\main\java\br\com\vr\exceptions\CardNotFoundException.java
+C:\myworkspace\java\desafio-vr\vr-card\src\main\java\br\com\vr\exceptions\GlobalExceptionHandler.java
+C:\myworkspace\java\desafio-vr\vr-card\src\main\java\br\com\vr\models\Card.java
+C:\myworkspace\java\desafio-vr\vr-card\src\main\java\br\com\vr\repositories\CardRepository.java
+C:\myworkspace\java\desafio-vr\vr-card\src\main\java\br\com\vr\services\CardService.java
 C:\myworkspace\java\desafio-vr\vr-card\src\main\java\br\com\vr\VrCardApplication.java
