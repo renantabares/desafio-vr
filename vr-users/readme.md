@@ -2,13 +2,12 @@
 
 
 Esse é o serviço de gestão de usuários(# vr-users)
-  Ele demanda que o serviço vr-card esteja rodando para consumir o bando de dados mongoDB.  
+  Ele demanda que o serviço vr-card esteja rodando para consumir o banco de dados mongoDB.  
 
 passos para rodar:
 
 * Ter os recursos necessário
     - Maven Instalado ou IDE de sua preferência 
-    - Docker Desktop instalado e rodando 
 * clonar esse repositório
 * fazer checkout na branch develop
 * Com Maven
