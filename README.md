@@ -12,6 +12,6 @@ grato.
 
 Renan Machado<br/>
 <a href= "https://wa.me/5548988075968/?text=mensagem_codificada"><img width="50" height="50" src="./whats.jpg"></a>
-<a href="tel:+48988075968" ><img width="50" height="50" src="./phone.png"></a>
+
 <a href="mailto:renantabares@gmail.com.com" ><img width="50" height="50" src="./mail.png"></a>
 
