@@ -7,4 +7,5 @@ Os microserviços precisa inicializar em uma determinada sequência:
 2. vr-users (ele é consumido pelo vr-authorization-server para gerar o token jwt)
 3. vr-authorization-server
 
-Cada microserviço tem um readme listando as tecnologias, assim como os passsos para rodar local. O banco selecionado foi o MongoDB.
+Cada microserviço tem um readme listando os passsos para rodar local. O banco selecionado foi o MongoDB.
+na diretório /issets tem a colection do postman utilizada em tempo de desenvolvimento 
