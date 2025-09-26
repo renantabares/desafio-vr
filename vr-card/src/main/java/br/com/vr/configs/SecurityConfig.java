@@ -19,7 +19,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/public/**").permitAll()
                         .requestMatchers("/cartoes/**").permitAll()
-                        .requestMatchers("/transacoes/**").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/transacoes").permitAll()
                         .requestMatchers("/swagger-ui/**").permitAll()
                         .requestMatchers("/swagger-ui.html").permitAll()
                         .anyRequest().authenticated()

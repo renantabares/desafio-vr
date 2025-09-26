@@ -4,6 +4,7 @@ import br.com.vr.dtos.CardDTO;
 import br.com.vr.dtos.TransactionDTO;
 import br.com.vr.models.Card;
 import br.com.vr.services.TransactionService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/transacoes")
+@Tag(name = "Transações", description = "Endpoints para gerenciamento  das transações dos cartões VR")
 public class TransactionController {
 
     private final TransactionService service;
