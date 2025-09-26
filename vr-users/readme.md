@@ -9,7 +9,7 @@ passos para rodar:
 * Ter os recursos necessário
     - Maven Instalado ou IDE de sua preferência 
     - Docker Desktop instalado e rodando 
-* colonar esse repositório
+* clonar esse repositório
 * fazer checkout na branch develop
 * Com Maven
     - acessar o diretório do micro serviço (/vr-users)
