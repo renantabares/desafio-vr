@@ -7,12 +7,12 @@ passos para rodar:
 * Ter os recursos necessário
     - Maven Instalado ou IDE de sua preferência 
     - Docker Desktop instalado e rodando 
-* colonar esse repositório
+* clonar esse repositório
 * fazer checkout na branch develop
 * Com Maven
     - acessar o diretório do micro serviço (/vr-card) ou importar em sua IDE
     - rodar o comando ./mvnw clean install (ou análogo na IDE)
     - ./mvnw spring-boot:run (ou análogo na IDE)
-    -  o app estrá rodando em http://localhost:8082
+    -  o app estará rodando em http://localhost:8082
 
     lembrando que as requisições vão precisar do Token JWT no header da requisição.
